@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <style>
+
+  .d1,.d3{
+    width: 500px;
+    margin: auto;
+  }
+  .d1 input{
+    width: 100%;
+  }
+  .message{
+    color:red;
+    font-size:110%;
+  }
+  .required{
+    color:red;
+  }
+  </style>
+  <head>
+    <title>Statement of Marks</title>
+  </head>
+  <div>
+    <h1 style="text-align: center;">Statement of Marks</h1>
+  </div>
+  <body>
+    <form name="markfields" method="post" action="action_page.php" onsubmit="return validate()">
+      <fieldset>
+        <legend>Student & Exam Information</legend>
+        <div class="d1">
+          <span class="required">*</span><br>
+          <input type="text" id="j01" name="name" placeholder="Name" onkeyup="toUpper()" />
+        </div>
+        <div id="j02" class="d1 message"></div><br>
+        <div class="d1">
+          <span class="required">*</span>
+          <label class="p01">EXAMINATION</label><br>
+          <select id="j03" name="exam" onchange="showSubjects()">
+            <option value="sel" selected>Select</option>
+            <option value="sem1">FIRST YEAR ENGINEERING SEMESTER I(CBGS)</option>
+            <option value="sem2">FIRST YEAR ENGINEERING SEMESTER II(CBGS)</option>
+          </select>
+        </div>
+        <div id="j04" class="d1 message"></div><br>
+        <div class="d1">
+          <span class="required">*</span><br>
+          <input type="text" maxlength="8" id="j05" name="sno" placeholder="Seat number" />
+        </div>
+        <div id="j06" class="d1 message"></div><br>
+        <div class="d1">
+          <span class="required">*</span><br>
+          <input type="text" maxlength="11" id="j07" name="regno" placeholder="Registration number" />
+        </div>
+        <div id="j08" class="d1 message"></div><br>
+      </fieldset>
+      <div class="d2"></div>
+      <div id="m01" class="d1 message"></div><br>
+      <div class="d3">
+        <button type="submit" value="Submit">Submit</button>
+        <button type="reset"  value="Reset">Reset</button>
+      </div>
+      </form>
+      <script src="scripts.js"></script>
+    </body>
+</html>
