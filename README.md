@@ -6,7 +6,7 @@ Mumbai university marksheet generation
 
 Software required/used: Any web server having PHP(server-side scripting) and MySQL(RDBMS). Preferably XAMPP/LAMP servers.
 
-Prerequisites: Create a database 'mu_marksheet' on MySQL server and import 'mu_marksheet.sql' into it.
+Prerequisites: Create a database 'mu_marksheet' on MySQL server and import 'mu_marksheet.sql' into it. Modify the code in 'mysqli_connect.php' as per your user status.
 
 
 Execution: 
@@ -20,5 +20,4 @@ XAMMP and 'www' for LAMP).
 
 
 -----------------------------------------------------THANK YOU------------------------------------------------------------
-
 
