@@ -6,12 +6,12 @@ function vseat(){
 	if(seat.value==""){
 		write.innerHTML="Required field!";
 		seat.style.border="2px solid red";
-    return false;
+    		return false;
 	}
 	else if(!regex.test(seat.value)){
 		write.innerHTML="Please enter a valid seat number!<br>"+"For eg. 12116793";
 		seat.style.border="2px solid red";
-    return false;
+    		return false;
 	}
 	else{
 		write.innerHTML="";
